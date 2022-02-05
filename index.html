@@ -1,0 +1,1979 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt: Majed’s Adventurous Quest to find the Mystery Box</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="script/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" />
+    <link rel="script/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" />
+<style>
+.profile {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-color: #007bff;
+  border-width: 5px;
+}
+
+body {
+        background-image: url('images/bg.png');
+      height: 100%;
+	  width:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+ }
+ <!-- style="background-color:#007bff" -->
+    </style>
+</head>
+<body>
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Click Here to Embark on A wonderful Journey</button></div>
+
+<div class="avatar" id="avatar" >
+<header>
+    <div class="title"><strong>Choose your character:</strong></div>      
+</header>
+
+        <section>
+         <!--<div class="ans ml-2">
+                        <label class="text"> <input type="text" name="name" id="name">
+                        </label>
+                    </div>-->
+               <div class="info-list">
+	<div class="info">
+                <table>
+				  <tr>
+				  <td> <img src="images/male.png" alt="Avatar" class="profile"> </td>
+				  <td> <div style="width:180px"></div> </td>
+				  <td> <img src="images/female.png" alt="Avatar" class="profile"> </td>
+				  </tr>
+				</table>
+                    
+    </div>
+				</div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="writeName('male')">&nbsp;Male&nbsp;<i class="fa fa-angle-right mt-1 mr-1"></i></button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="writeName('female')">Female<i class="fa fa-angle-right ml-2"></i></button>
+                
+    </div>
+                
+    </section>
+</div>
+
+
+    <!-- Info Box -->
+    <div class="info_box" id="info_box">
+        <div class="info-title"><span>Prologue:</span></div>
+        <div class="info-list">
+	<!--<div class="info">
+Majed lives on the outskirts of a small town called lazy village. (He/ she) lives with (his/her) mother Dalia, a teacher at the local school, all by themselves after (his, her) father left for a trading business one day a couple of years ago and yet to return.<br> On (his/her) 12th birthday, Majed and (his/ her) mother were having cake when she gave (him/ her) an envelope from (his/her) father. Excited to have a word about when (his/her) father returns, (he, she) ripped opened the envelope to a find a letter that says:
+<br>‘ My beloved Majed,</div>-->
+	 <div class="info_text">
+           
+        </div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Journey</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+	
+<form id="quiz-form" class="quiz-form" style="display:block">
+<!-- Show Next Level Story -->
+
+<div class="quiz_box" id="level_1" ><!-- style="display:block">  -->
+<header>
+            <div class="title">Level 1</div>           
+</header>
+        <section>         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">                    
+                        <h5 class="mt-1 ml-2">
+Majd woke up early the following morning, after celebrating his birthday with Dalia who made a tasty dinner for the occasion. <br>
+Majd needed to leave at 08:00 a.m. He moved out of bed and into the living room and looked at the clock mounted at the wall. <br>
+The clock’s small hand pointed to 7 and the longer hand pointed to 6 at the bottom middle of the clock.
+</h5>
+                    </div>
+            
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box3','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                </div>
+                
+        </section>
+</div>
+
+<div class="quiz_box" id="quiz_box3" style="display:block">
+<header>
+            <div class="title">Level 1</div>
+           
+         
+        </header>
+
+        <section>
+             
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">1.</h3>
+                        <h5 class="mt-1 ml-2">
+						
+						Majd did the calculation and figured 						
+						had ________ minutes to embark on his journey).
+						</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q3" id="q3" value="115000" > <span>45</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q3" id="q3"value="true"> <span>30</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q3" id="q3" value="95000"> <span>20</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q3" id="q3" value="126000"> <span>60</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box3')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_2','q3')">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+                
+ </section>
+</div>
+
+<!-- Show Next Level Story -->
+
+<div class="quiz_box" id="level_2">
+<header>
+            <div class="title">Level 2</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+The smell of fried eggs came from the kitchen. Dalia had already prepared breakfast. So, after a quick breakfast, Majd dressed up and kissed his mother goodbye. <br>
+Dalia gave him 20 coins and wished her kid a happy journey. Standing by the fence of the house, Majd brought up the map to figure out his first waypoint on the path.<br>
+ He decided to stop by the grocery store in the middle of the village to get some necessities for the trip. Majd thought about the items to be purchased while strolling down the hill towards the village. For food, Majd decided on 4 energy bars and two juice bottles. <br> 
+Dalia already packed Majd a couple of sandwiches, but he thought that some more items would not be wasted.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box6','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box6">
+<header>
+            <div class="title">Level 2</div>
+           
+         
+        </header>
+
+        <section>
+             
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">2.</h3>
+                        <h5 class="mt-1 ml-2">At the store, Majd stood at the aisle trying to figure out the total price for the purchases. Each energy bar was 4 coins, and a bottle of juice cost 2 coins. <br>
+						Majd did the math and calculated 4x4 be equal to ____A____for the energy bars, and 2x2 to be equal to ___B_____  for the juice bottles. Majd took out the 20 coins and was left with ____C____ .<br>
+						
+						Mr. Fadi, the store cashier was packing Majd’s items when Majd handed him ____D___  and thanked him.
+						
+</h5>
+</div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q6" id="q6" value="false" > <span>A=15,B=3,C=6,D=18</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q6" id="q6"value="true"> <span>A=16,B=4,C=0,D=20</span>
+                        </label>
+                    </div>
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q6" id="q6"value="false"> <span>A=17,B=5,C=0,D=15</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q6" id="q6" value="false"> <span>A=16,B=3,C=1,D=20</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box6')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_3','q6')">Next<i class="fa fa-angle-right ml-2"></i></button>
+				</div>
+               
+ </section>
+</div>
+
+<div class="quiz_box" id="level_3">
+<header>
+            <div class="title">Level 3</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+Out of the store, Majd was eager to get on the way. He ran to the main road at the edge of town, where houses are no more and the wonderful hills ahead.<br>
+ Majd stopped by the main road, realizing this is the farthest he has been from home. A tall man was leaning on the village’s sign that read ‘Welcome to Tomako!”. <br>
+ The man wore a red sweater with blue jeans. His face was covered by sun glasses and a surgeon’s mask that Majd guessed was to protect against some kind of infectious virus. 
+ <br>
+ The man’s posture reminded Majd of his father but he wore no necklace and Majd dismissed the thought. He then consulted the map to see that the next waypoint was at the shores of “Blue Lake”, a clear-watered lake just beyond the hills facing him. There were three pathways to get there. <br>
+The distances along each were unknown to Majd and he needed to take the shortest to get to the chest as soon as possible. The man, sensing Majd’s confusion walked over and told Majd that he knew the distances by heart as he had travelled these paths plenty of time. He said the first to the left was around five hundred meters, the one in the middle was fifty meters short of six hundred, and the one to the right was approximately six hundred meters. 
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box9','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box9">
+<header>
+            <div class="title">Level 3</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">3.</h3>
+                        <h5 class="mt-1 ml-2">
+Majd thanked the man and immediately chose the path on the ________ . 
+The man shouted after Majd that he was happy to help and maybe they’ll meet again.
+</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q9" id="q9" value="2"> <span>right</span>
+                        </label>
+                    </div>
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q9" id="q9" value="true"> <span>left</span>
+                        </label>
+                    </div>
+                   
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box9')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_4','q9')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_4">
+<header>
+            <div class="title">Level 4</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+After clearing the last hill, Majd emerged to a breathtaking scene where Blue Lake stretched wide and long. It was quite a bit to noon as the sun was nearing the center of the sky. Majd strolled down the easy path to the shore of the lake. <br>
+He needed a little rest and nourishment. A sandwich, two energy bars, and one juice bottle later, Majd was ready to move on. <br>
+The map now showed a path across the lake! Majd had no floating device to get across. Scouting the area nearby, he found a small pier with one rusty boat moored at its side. The sound of tools and singing came from the boat. Majd approached with caution atop the pier. <br>
+He found an old sailor with white head and beard busy fixing a mechanical part inside the rusty boat. The sailor smiled at Majd and asked what was he doing there. Majd explained her need to cross Blue Lake to the other side. The sailor said he’s about done fixing the boat and only needs a small part from his toolshed back at the hill side.<br>
+ Majd volunteered to fetch the part for which the sailor responded ‘bring the parallelogram-shaped part, not any other.’ 
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box10','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box10">
+<header>
+            <div class="title">Level 4</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">4.</h3>
+                        <h5 class="mt-1 ml-2">
+Majed found four types of parts hanging in the shed. The first was perfectly round. The second was bent at the middle to form a half circle. The third looked like a kite. And the fourth was piece of square metal. <br>
+Majd grabbed the ________  shape, closed the door to the shed behind him, and ran back to the boat.
+</h5>
+                    </div>
+					
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q10" id="q10" value="true"> <span>third</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q10" id="q10" value="true" > <span>second</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q10" id="q10" value="true"> <span>fourth</span>
+                        </label>
+                    </div>
+					
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box10')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_5','q10')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_5">
+<header>
+            <div class="title">Level 5</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+The sailor piloted the boat masterfully through Blue Lake while Majd sat by his side looking out at the turquoise-colored water. <br>
+The water was so clear and transparent Majd could see all the way to the deep bottom. Almost in the middle of the lake, the old sailor turned the boat off. <br>
+The sailor explained that he needed to have lunch. Majd offered that they share his packed food and drink and though the sailor accepted the young kid’s generosity, he suggested having some grilled fish as well. The sailor then motioned for Majd to follow him to the boat’s sheer, where he got ready to dive underwater.<br>
+ Before submerging, the sailor kindly asked Majd to scout the waters for locations of oval-shaped fish as those were the most beefy and delicious.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box11','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+
+<div class="quiz_box" id="quiz_box11">
+<header>
+            <div class="title">Level 5</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">5.</h3>
+                        <h5 class="mt-1 ml-2">
+Majd moved around the three sides of the sheer. On the left side, he saw northern pike fish which had long and straight bodies. On the back side, Majd spotted a swarm of little paedocypris fish. <br>
+Moving on to the right side, a couple of hyporthodus dermopterus fish were swimming lazily near the boat. Majd could only see them from above, but he knew those fish looked like eggs from the sides. He approached the sailor before he dove and told him that the best location to find the desired fish was at the ________  side of the sheer
+</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q11" id="q11" value="error"> <span>left</span>
+                        </label>
+                    </div>
+                   
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q11" id="q11" value="true"> <span>right</span>
+                        </label>
+                    </div>
+					
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box11')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_6','q11')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_6">
+<header>
+            <div class="title">Level 6</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+While Majd and the old sailor were sharing lunch after they grilled the two captured fish over hot-burning coal, they noticed another boat breeze by them across the lake. Majd’s gaze spotted the captain of the passing boat and recognized him as the mysterious man from back at Tomako’s edge by the road. They finished their meal, cleaned around the boat, and threw the organic leftovers for the fish to nibble at.<br>
+ The sailor frowned when he was checking their fuel gauge. He knew from experience that the fuel they had would only take them 4 km ahead. The sailor looked at Majd who entered the cabin and asked the sailor what was worrying him. <br>
+ The sailor explained the situation. He wanted to be sure that the fuel in their tank was enough to get across. Otherwise, they would have to turn back as the meter on the center console marked 3.8 km from when they started.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box12','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box12">
+<header>
+            <div class="title">Level 6</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">6.</h3>
+                        <h5 class="mt-1 ml-2">
+Majd was thinking of a way to help. He knew that if he can find some information about the size of the lake, maybe he could calculate the distance to the other side. He grabbed a lake magazine for fishers and on one of the pages saw Blue Lake in a picture taken from the sky. <br>
+It showed the lake as a circle. In the text under, the author wrote that the lake was 38.48 km2. Majd knew that he could estimate the radius of the lake using a formula he learned at school (Area = pi x radius2) for circles. Working the formula on the back of the magazine, Majd calculated the radius of the lake at ____A____ . Then, deduced that the diameter (2 x radius) is ____B____.<br>
+ Given that they travelled 3.8 km so far, that meant ____C____ lay ahead.<br>
+ He turned to the sailor with a smile on his face and told him in no uncertain terms that they can make it with the fuel they had.
+</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q12" id="q12" value="true"> <span>A=3.5 Km,B=7 Km,C=3.2 Km</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q12" id="q12" value="error" > <span>A=2.5 Km,B=7 Km,C=3.6 Km</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q12" id="q12" value="error"> <span>A=3.5 Km,B=6 Km,C=3.4 Km</span>
+                        </label>
+                    </div>
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q12" id="q12" value="error"> <span>A=3.6 Km,B=3.2 Km,C=7 Km</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box12')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_7','q12')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+  
+<div class="quiz_box" id="level_7">
+<header>
+            <div class="title">Level 7</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+The boat crossed the majority of the distance that Majd could clearly see the pier ahead on the shore of the lake. <br>
+Unfortunately, the wind has picked up and the boat was making less and less progress through the water. In a couple of minutes, the motor stopped working. The fuel has dried up. Luckily, the mysterious man was cruising around them and stopped by to lend them some fuel which they used to reach the pier where the old sailor went on to refuel his boat. <br>
+Though Majd was eager to be on his way, he did not forget to thank the old sailor who just smiled and waved his hand in dismissal of the young kid’s compliments. Majd’s delight turned into fear as he stood in front of the dark forest named famously ‘Grizzly Forest’. The sun was near getting set and light barely penetrated the thick vegetation ahead. <br>
+The mysterious man stepped next to Majd, looking ahead to the dimming forest. Majd couldn’t determine if he too is afraid as his features were still covered. The man started walking and said offhandedly that he had business on the other side of the forest and wouldn’t mind the company. Majd rushed behind the tall man as they entered Grizzly Forest.</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_8','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+  
+<div class="quiz_box" id="quiz_box13">
+<header>
+            <div class="title">Level 7</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">1.</h3>
+                        <h5 class="mt-1 ml-2">
+Using this boat, you reached the dark forest.
+<br>
+This forest is also the homes of mammals, birds, insects, and many other animals.It includes 50% of birds and the percentage of mammals is half percentage of birds. <br>How much the percentage of insects will have</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q13" id="q13" value="true"> <span>25</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q13" id="q13" value="50" > <span>50</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q13" id="q13" value="15"> <span>15</span>
+                        </label>
+                    </div>
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q13" id="q13" value="75"> <span>75</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box13')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box14','q13')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_8">
+<header>
+            <div class="title">Level 8</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+A multitude of sounds rushed Majd’s ears as they entered Grizzly Forest. Animals were hidden, big and small they were calling each other in overlapping animal languages. Trees and bushes swished by the force of the wind. The two travelers switch on their headlights as darkness settled. Majd and the mysterious man kept going through. <br>
+They agreed to camp at the edge of the forest. When they finally emerged from the dense forest, it was getting late. The man went on to set up his tent. Majd wanted a clearing between trees that resembled a rectangle as he knew that the base of the tent was rectangular in shape. <br>
+Around him, he identified various interpolations between trees. Near the man’s tent there was a clearing between three trees. Farther to the right, there was a clearing between four trees, where the adjacent trees were equidistant and the adjacent imaginary lines from tree trunk to the next were perpendicular. Looking behind him, there was a clearing between four trees were the distant between opposite imaginary line were equal but not adjust ones though those were perpendicular.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box14','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box14">
+<header>
+            <div class="title">Level 8</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">8.</h3>
+                        <h5 class="mt-1 ml-2">
+Majd moved to set the tent in the clearing ________ and used the surrounding trees as anchors to which the ropes were tied.</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q14" id="q14" value="true"> <span>behind</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q14" id="q14" value="5" > <span>infront</span>
+                        </label>
+                    </div>
+                   
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box14')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_9','q14')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_9">
+<header>
+            <div class="title">Level 9</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+After setting up his tent, Majd met the mysterious man between their tents. The man was trying to build a fire. But the wooden sticks there weren’t enough. So, Majd volunteered to go around and bring more wood for the fire. He estimated that they would need fifty wooden logs. <br>
+When Majd made the first round, he could only carry five at a time.
+</h5>                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box15','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box15">
+<header>
+            <div class="title">Level 9</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">9.a</h3>
+                        <h5 class="mt-1 ml-2">
+The man asked Majd how many rounds for wood they would need. Majd estimated that ________ rounds were in order, told the man so, and went on to do the rounds.</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q15" id="q15" value="trapezoid"> <span>7</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q15" id="q15" value="true" > <span>10</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q15" id="q15" value="oval"> <span>12</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box15')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box16','q15')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box16">
+<header>
+            <div class="title">Level 9</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">9.b</h3>
+                        <h5 class="mt-1 ml-2">
+ When the required amount of wood was stacked near the now glazing fire. Majd sat down to share dinner with the mysterious man. <br>
+ By that point, Majd has already consumed three of the four energy bars which was ____A____ percent of the bars purchased earlier that day. He opened the backpack to find one of the two juice bottles remaining, meaning he drank ____B____  percent of the juice purchased earlier. The man had his own dinner packed and even offered Majd 20 percent of his apples. Politely, Majd grabbed ____C____ out of the five apples the man had.
+ </h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q16" id="q16" value="trapezoid"> <span>A=75,B=50,C=2</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q16" id="q16" value="true" > <span>A=75,B=50,C=1</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q16" id="q16" value="oval"> <span>A=50,B=75,C=2</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box16')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_10','q15')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_10">
+<header>
+            <div class="title">Level 10</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+The sun rays were hitting Majd’s tent when he woke up the next morning. When he exited the tent, the mysterious man was already packed and sitting in wait. Majd quickly disassemble the tent and stored it in the backpack.<br>
+ Then they both walked towards the edge of the mountain. They stopped short of a wall of rocky cliffs that went down 60 meters to a sandy land beneath it. The mysterious man said that this is definitely the Sheereo Cliffs. There were no paths around this cliff, as Majd learned from the map now clutched in his hands. 
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box17','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box17">
+<header>
+            <div class="title">Level 10</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">10.a</h3>
+                        <h5 class="mt-1 ml-2">
+ Luckily, Majd had rope  ________  sixty meters long to scale down the cliff to the bottom. The man had one too. <br>
+ So, they went on to fasten one end of their ropes each to a formidable rock that were two meters apart. <br>
+ The man cautioned Majd that while descending they should maintain that distance between them so that their ropes does not get tangled. </h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q17" id="q17" value="trapezoid"> <span>less than</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q17" id="q17" value="true" > <span>more than</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q17" id="q17" value="oval"> <span>exactly</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box17')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box18','q17')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box18">
+<header>
+            <div class="title">Level 10</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">10.b</h3>
+                        <h5 class="mt-1 ml-2">
+ Majed new that this meant that the ropes have to be ____A____  all the way. They starting descending and at one point the distance between them became a meter and a half. Majd looked up and saw that the man’s rope was straight down while his own rope was has shifted. <br>
+ So, Majd corrected his descent by going half a meter ____B____  from the mysterious man.
+ </h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q18" id="q18" value="trapezoid"> <span>A=parallel,B=near
+						</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q18" id="q18" value="true" > <span>A=parallel,B=away</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q18" id="q18" value="oval"> <span>A=perpendicular
+					,B=near</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box18')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box19','q18')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_11">
+<header>
+            <div class="title">Level 11</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+When they reach the sandy bottom, Majd can feel that the journey was almost at its end. He said goodbye to the mysterious man who went on out of the sand to his own destination. Looking back at the map, Majd saw a diagonal line to slightly to the front-right from where he stood now the an ‘x’ mark which most definitely was the location of the chest. The diagonal had a label reading 5m.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box20','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box19">
+<header>
+            <div class="title">Level 11</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">11</h3>
+                        <h5 class="mt-1 ml-2">
+ That was only five meters away, Majd knew. But on the real sand, the diagonal passed through a brush of cactus trees that had plenty of pointy thorns. He knew he had to go around. Majd walked in a line straight ahead and stopped at four meters then turn 90 degrees to the right facing the spot where the ‘x’ mark was on the map. He then walk another ________ meters. <br>
+ When Majd was finally standing above the ‘x’ mark, he brought up a small shovel and started digging. It did not take long before Majd heard the shovel hit a solid object under the ground.
+ </h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q19" id="q19" value="trapezoid"> <span>9</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q19" id="q19" value="true" > <span>3</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q19" id="q19" value="oval"> <span>6</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box19')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_12','q19')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_12">
+<header>
+            <div class="title">Level 12</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+Now filled with excitement, Majd cleared the sand around the chest and kneeled down only to realize that it is not an ordinary chest.<br>
+ The chest had three dials each with two digits currently set at zeros. Staring at the six zeros, Majd knew that this meant a key must be applied as numbers for the chest to open. Given that the chest was buried there by his father, Majd speculated that the key must be a number  he could figure out.<br>
+ A special number? A special six-digit number? Majd’s eyes widened. It must be a short representation for his birthdate.<br>
+ Majd knew he was born on the 11th day of a month in spring, the year 2011. All he could remember about the month is his mother saying ‘It is the only month in spring that its number of letters is divisible by 3’. 
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box20','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+	
+<div class="quiz_box" id="quiz_box20">
+<header>
+            <div class="title">Level 12</div>
+            
+
+        </header>
+
+        <section>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">12.</h3>
+                        <h5 class="mt-1 ml-2">
+						Immediately, Majd began rotating the dials on the left to ____A____ as the day he was born before moving to the middle dials and entering ____B____  as the month he was born. While setting the dials on the right to ____C____  as the year he was born, the chest gave a clinging sound. <br>
+						Majd’s heart beats pounded against his chest in anticipation. He slowly opened the lid of the chest to find a stylish pair of roller skates. Majd was delighted. As he removed the shiny wheeled shoes from the chest, Majd found the wool necklace that he gave Sami the day he left.<br>
+						Majd fought the tears forming in his eyes to no avail.
+						</h5>
+                    </div>
+					<center><img src="images/treasure.png" width="150px" height="200px"/></center>
+                    
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q20" id="q20" value="error"> <span>A=11,B=05,C=05
+						</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q20" id="q20" value="error" > <span>A=5,B=05,C=11</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q20" id="q20" value="true"> <span>A=11,B=05,C=11</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box20')">
+				<i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+			 <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('','q20')">Finish<i class="fa fa-angle-right ml-2"></i></button>	
+	<!--			<button class="btn btn-primary border-success align-items-center btn-success finish" onclick="show('','$')" id="finish">Finish<i class="fa fa-angle-right ml-2"></i></button></div>
+ -->
+ </section>
+</div> 
+</div>
+
+
+</form>
+
+
+<div id="quiz-formFemale" class="quiz-form">
+<!-- Show Next Level Story -->
+
+<div class="quiz_box" id="level_1F" ><!-- style="display:block">  -->
+<header>
+            <div class="title">Level 1</div>           
+</header>
+        <section>         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">                    
+                        <h5 class="mt-1 ml-2">
+Majd woke up early the following morning, after celebrating her birthday with Dalia who made a tasty dinner for the occasion. <br>
+Majd needed to leave at 08:00 a.m. She moved out of bed and into the living room and looked at the clock mounted at the wall. <br>
+The clock’s small hand pointed to 7 and the longer hand pointed to 6 at the bottom middle of the clock.
+</h5>
+                    </div>
+            
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box3F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                </div>
+                
+        </section>
+</div>
+
+<div class="quiz_box" id="quiz_box3F" style="display:block">
+<header>
+            <div class="title">Level 1</div>
+           
+         
+        </header>
+
+        <section>
+             
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">1.</h3>
+                        <h5 class="mt-1 ml-2">
+						
+						Majd did the calculation and figured 						
+						had ________ minutes to embark on her journey.
+						</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q3F" id="q3F" value="115000" > <span>45</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q3F" id="q3F"value="true"> <span>30</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q3F" id="q3F" value="95000"> <span>20</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q3F" id="q3F" value="126000"> <span>60</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box3F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_2F','q3F')">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+                
+ </section>
+</div>
+
+<!-- Show Next Level Story -->
+
+<div class="quiz_box" id="level_2F">
+<header>
+            <div class="title">Level 2</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+The smell of fried eggs came from the kitchen. Dalia had already prepared breakfast. So, after a quick breakfast, Majd dressed up and kissed her mother goodbye. <br>
+Dalia gave her 20 coins and wished her kid a happy journey. Standing by the fence of the house, Majd brought up the map to figure out her first waypoint on the path.<br>
+ She decided to stop by the grocery store in the middle of the village to get some necessities for the trip. Majd thought about the items to be purchased while strolling down the hill towards the village. For food, Majd decided on 4 energy bars and two juice bottles. <br> 
+Dalia already packed Majd a couple of sandwiches, but she thought that some more items would not be wasted.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box6F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box6F">
+<header>
+            <div class="title">Level 2</div>
+           
+         
+        </header>
+
+        <section>
+             
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">2.</h3>
+                        <h5 class="mt-1 ml-2">At the store, Majd stood at the aisle trying to figure out the total price for the purchases. Each energy bar was 4 coins, and a bottle of juice cost 2 coins. <br>
+						Majd did the math and calculated 4x4 be equal to ____A____for the energy bars, and 2x2 to be equal to ___B_____  for the juice bottles. Majd took out the 20 coins and was left with ____C____ .<br>
+						
+						Mr. Fadi, the store cashier was packing Majd’s items when Majd handed him ____D___  and thanked him.
+						
+</h5>
+</div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q6F" id="q6F" value="false" > <span>A=15,B=3,C=6,D=18</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q6F" id="q6F"value="true"> <span>A=16,B=4,C=0,D=20</span>
+                        </label>
+                    </div>
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q6F" id="q6F"value="false"> <span>A=17,B=5,C=0,D=15</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q6F" id="q6F" value="false"> <span>A=16,B=3,C=1,D=20</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box6F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_3F','q6F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+				</div>
+               
+ </section>
+</div>
+
+<div class="quiz_box" id="level_3F">
+<header>
+            <div class="title">Level 3</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+Out of the store, Majd was eager to get on the way.She ran to the main road at the edge of town, where houses are no more and the wonderful hills ahead.<br>
+ Majd stopped by the main road, realizing this is the farthest she has been from home. A tall man was leaning on the village’s sign that read ‘Welcome to Tomako!”. <br>
+ The man wore a red sweater with blue jeans. His face was covered by sun glasses and a surgeon’s mask that Majd guessed was to protect against some kind of infectious virus. 
+ <br>
+ The man’s posture reminded Majd of his father but he wore no necklace and Majd dismissed the thought.She then consulted the map to see that the next waypoint was at the shores of “Blue Lake”, a clear-watered lake just beyond the hills facing her. There were three pathways to get there. <br>
+The distances along each were unknown to Majd and she needed to take the shortest to get to the chest as soon as possible. The man, sensing Majd’s confusion walked over and told Majd that he knew the distances by heart as he had travelled these paths plenty of time. He said the first to the left was around five hundred meters, the one in the middle was fifty meters short of six hundred, and the one to the right was approximately six hundred meters. 
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box9F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box9F">
+<header>
+            <div class="title">Level 3</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">3.</h3>
+                        <h5 class="mt-1 ml-2">
+Majd thanked the man and immediately chose the path on the ________ . 
+The man shouted after Majd that he was happy to help and maybe they’ll meet again.
+</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q9F" id="q9F" value="2"> <span>right</span>
+                        </label>
+                    </div>
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q9F" id="q9F" value="true"> <span>left</span>
+                        </label>
+                    </div>
+                   
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box9F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_4F','q9F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_4F">
+<header>
+            <div class="title">Level 4</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+After clearing the last hill, Majd emerged to a breathtaking scene where Blue Lake stretched wide and long. It was quite a bit to noon as the sun was nearing the center of the sky. Majd strolled down the easy path to the shore of the lake. <br>
+She needed a little rest and nourishment. A sandwich, two energy bars, and one juice bottle later, Majd was ready to move on. <br>
+The map now showed a path across the lake! Majd had no floating device to get across. Scouting the area nearby, she found a small pier with one rusty boat moored at its side. The sound of tools and singing came from the boat. Majd approached with caution atop the pier. <br>
+She found an old sailor with white head and beard busy fixing a mechanical part inside the rusty boat. The sailor smiled at Majd and asked what was she doing there. Majd explained her need to cross Blue Lake to the other side. The sailor said he’s about done fixing the boat and only needs a small part from his toolshed back at the hill side.<br>
+ Majd volunteered to fetch the part for which the sailor responded ‘bring the parallelogram-shaped part, not any other.’ 
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box10F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box10F">
+<header>
+            <div class="title">Level 4</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">4.</h3>
+                        <h5 class="mt-1 ml-2">
+Majed found four types of parts hanging in the shed. The first was perfectly round. The second was bent at the middle to form a half circle. The third looked like a kite. And the fourth was piece of square metal. <br>
+Majd grabbed the ________  shape, closed the door to the shed behind her, and ran back to the boat.
+</h5>
+                    </div>
+					
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q10F" id="q10" value="true"> <span>third</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q10F" id="q10" value="true" > <span>second</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q10F" id="q10" value="true"> <span>fourth</span>
+                        </label>
+                    </div>
+					
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box10F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_5F','q10F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_5F">
+<header>
+            <div class="title">Level 5</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+The sailor piloted the boat masterfully through Blue Lake while Majd sat by his side looking out at the turquoise-colored water. <br>
+The water was so clear and transparent Majd could see all the way to the deep bottom. Almost in the middle of the lake, the old sailor turned the boat off. <br>
+The sailor explained that he needed to have lunch. Majd offered that they share her packed food and drink and though the sailor accepted the young kid’s generosity, he suggested having some grilled fish as well. The sailor then motioned for Majd to follow him to the boat’s sheer, where he got ready to dive underwater.<br>
+ Before submerging, the sailor kindly asked Majd to scout the waters for locations of oval-shaped fish as those were the most beefy and delicious.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box11F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+
+<div class="quiz_box" id="quiz_box11F">
+<header>
+            <div class="title">Level 5</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">5.</h3>
+                        <h5 class="mt-1 ml-2">
+Majd moved around the three sides of the sheer. On the left side, she saw northern pike fish which had long and straight bodies. On the back side, Majd spotted a swarm of little paedocypris fish. <br>
+Moving on to the right side, a couple of hyporthodus dermopterus fish were swimming lazily near the boat. Majd could only see them from above, but  she knew those fish looked like eggs from the sides. (He/ She) approached the sailor before he dove and told him that the best location to find the desired fish was at the ________  side of the sheer
+</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q11F" id="q11F" value="error"> <span>left</span>
+                        </label>
+                    </div>
+                   
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q11F" id="q11F" value="true"> <span>right</span>
+                        </label>
+                    </div>
+					
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box11F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_6F','q11F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_6F">
+<header>
+            <div class="title">Level 6</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+While Majd and the old sailor were sharing lunch after they grilled the two captured fish over hot-burning coal, they noticed another boat breeze by them across the lake. Majd’s gaze spotted the captain of the passing boat and recognized him as the mysterious man from back at Tomako’s edge by the road. They finished their meal, cleaned around the boat, and threw the organic leftovers for the fish to nibble at.<br>
+ The sailor frowned when he was checking their fuel gauge. He knew from experience that the fuel they had would only take them 4 km ahead. The sailor looked at Majd who entered the cabin and asked the sailor what was worrying him. <br>
+ The sailor explained the situation. He wanted to be sure that the fuel in their tank was enough to get across. Otherwise, they would have to turn back as the meter on the center console marked 3.8 km from when they started.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box12F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box12F">
+<header>
+            <div class="title">Level 6</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">6.</h3>
+                        <h5 class="mt-1 ml-2">
+Majd was thinking of a way to help. She knew that if she can find some information about the size of the lake, maybe he could calculate the distance to the other side.She grabbed a lake magazine for fishers and on one of the pages saw Blue Lake in a picture taken from the sky. <br>
+It showed the lake as a circle. In the text under, the author wrote that the lake was 38.48 km2. Majd knew that she could estimate the radius of the lake using a formula she) learned at school (Area = pi x radius2) for circles. Working the formula on the back of the magazine, Majd calculated the radius of the lake at ____A____ . Then, deduced that the diameter (2 x radius) is ____B____.<br>
+ Given that they travelled 3.8 km so far, that meant ____C____ lay ahead.<br>
+  She turned to the sailor with a smile on herface and told him in no uncertain terms that they can make it with the fuel they had.
+</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q12F" id="q12F" value="true"> <span>A=3.5 Km,B=7 Km,C=3.2 Km</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q12F" id="q12F" value="error" > <span>A=2.5 Km,B=7 Km,C=3.6 Km</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q12F" id="q12F" value="error"> <span>A=3.5 Km,B=6 Km,C=3.4 Km</span>
+                        </label>
+                    </div>
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q12F" id="q12F" value="error"> <span>A=3.6 Km,B=3.2 Km,C=7 Km</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box12F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_7F','q12F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+  
+<div class="quiz_box" id="level_7F">
+<header>
+            <div class="title">Level 7</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+The boat crossed the majority of the distance that Majd could clearly see the pier ahead on the shore of the lake. <br>
+Unfortunately, the wind has picked up and the boat was making less and less progress through the water. In a couple of minutes, the motor stopped working. The fuel has dried up. Luckily, the mysterious man was cruising around them and stopped by to lend them some fuel which they used to reach the pier where the old sailor went on to refuel his boat. <br>
+Though Majd was eager to be on her way, she did not forget to thank the old sailor who just smiled and waved his hand in dismissal of the young kid’s compliments. Majd’s delight turned into fear as  she stood in front of the dark forest named famously ‘Grizzly Forest’. The sun was near getting set and light barely penetrated the thick vegetation ahead. <br>
+The mysterious man stepped next to Majd, looking ahead to the dimming forest. Majd couldn’t determine if he too is afraid as his features were still covered. The man started walking and said offhandedly that he had business on the other side of the forest and wouldn’t mind the company. Majd rushed behind the tall man as they entered Grizzly Forest.</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_8F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+  
+<div class="quiz_box" id="quiz_box13F">
+<header>
+            <div class="title">Level 7</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">1.</h3>
+                        <h5 class="mt-1 ml-2">
+Using this boat, you reached the dark forest.
+<br>
+This forest is also the homes of mammals, birds, insects, and many other animals.It includes 50% of birds and the percentage of mammals is half percentage of birds. <br>How much the percentage of insects will have</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q13F" id="q13F" value="true"> <span>25</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q13F" id="q13F" value="50" > <span>50</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q13F" id="q13F" value="15"> <span>15</span>
+                        </label>
+                    </div>
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q13F" id="q13F" value="75"> <span>75</span>
+                        </label>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box13F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box14F','q13F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_8F">
+<header>
+            <div class="title">Level 8</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+A multitude of sounds rushed Majd’s ears as they entered Grizzly Forest. Animals were hidden, big and small they were calling each other in overlapping animal languages. Trees and bushes swished by the force of the wind. The two travelers switch on their headlights as darkness settled. Majd and the mysterious man kept going through. <br>
+They agreed to camp at the edge of the forest. When they finally emerged from the dense forest, it was getting late. The man went on to set up his tent. Majd wanted a clearing between trees that resembled a rectangle as she knew that the base of the tent was rectangular in shape. <br>
+Around  her, she identified various interpolations between trees. Near the man’s tent there was a clearing between three trees. Farther to the right, there was a clearing between four trees, where the adjacent trees were equidistant and the adjacent imaginary lines from tree trunk to the next were perpendicular. Looking behind him, there was a clearing between four trees were the distant between opposite imaginary line were equal but not adjust ones though those were perpendicular.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box14F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box14F">
+<header>
+            <div class="title">Level 8</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">8.</h3>
+                        <h5 class="mt-1 ml-2">
+Majd moved to set the tent in the clearing ________ and used the surrounding trees as anchors to which the ropes were tied.</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q14F" id="q14F" value="true"> <span>behind</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q14F" id="q14F" value="5" > <span>infront</span>
+                        </label>
+                    </div>
+                   
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box14F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_9F','q14F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_9F">
+<header>
+            <div class="title">Level 9</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+After setting up her tent, Majd met the mysterious man between their tents. The man was trying to build a fire. But the wooden sticks there weren’t enough. So, Majd volunteered to go around and bring more wood for the fire. (He/ She) estimated that they would need fifty wooden logs. <br>
+When Majd made the first round, she could only carry five at a time.
+</h5>                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box15F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box15F">
+<header>
+            <div class="title">Level 9</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">9.a</h3>
+                        <h5 class="mt-1 ml-2">
+The man asked Majd how many rounds for wood they would need. Majd estimated that ________ rounds were in order, told the man so, and went on to do the rounds.</h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q15F" id="q15F" value="trapezoid"> <span>7</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q15F" id="q15F" value="true" > <span>10</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q15F" id="q15F" value="oval"> <span>12</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box15F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box16F','q15F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box16F">
+<header>
+            <div class="title">Level 9</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">9.b</h3>
+                        <h5 class="mt-1 ml-2">
+ When the required amount of wood was stacked near the now glazing fire. Majd sat down to share dinner with the mysterious man. <br>
+ By that point, Majd has already consumed three of the four energy bars which was ____A____ percent of the bars purchased earlier that day.She opened the backpack to find one of the two juice bottles remaining, meaning she drank ____B____  percent of the juice purchased earlier. The man had his own dinner packed and even offered Majd 20 percent of his apples. Politely, Majd grabbed ____C____ out of the five apples the man had.
+ </h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q16F" id="q16F" value="trapezoid"> <span>A=75,B=50,C=2</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q16F" id="q16F" value="true" > <span>A=75,B=50,C=1</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q16F" id="q16F" value="oval"> <span>A=50,B=75,C=2</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box16F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_10F','q15F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_10F">
+<header>
+            <div class="title">Level 10</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+The sun rays were hitting Majd’s tent when she woke up the next morning. When she exited the tent, the mysterious man was already packed and sitting in wait. Majd quickly disassemble the tent and stored it in the backpack.<br>
+ Then they both walked towards the edge of the mountain. They stopped short of a wall of rocky cliffs that went down 60 meters to a sandy land beneath it. The mysterious man said that this is definitely the Sheereo Cliffs. There were no paths around this cliff, as Majd learned from the map now clutched in her hands. 
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box17F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box17F">
+<header>
+            <div class="title">Level 10</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">10.a</h3>
+                        <h5 class="mt-1 ml-2">
+ Luckily, Majd had rope  ________  sixty meters long to scale down the cliff to the bottom. The man had one too. <br>
+ So, they went on to fasten one end of their ropes each to a formidable rock that were two meters apart. <br>
+ The man cautioned Majd that while descending they should maintain that distance between them so that their ropes does not get tangled. </h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q17F" id="q17F" value="trapezoid"> <span>less than</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q17F" id="q17F" value="true" > <span>more than</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q17F" id="q17F" value="oval"> <span>exactly</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box17F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box18F','q17F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box18F">
+<header>
+            <div class="title">Level 10</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">10.b</h3>
+                        <h5 class="mt-1 ml-2">
+ Majed new that this meant that the ropes have to be ____A____  all the way. They starting descending and at one point the distance between them became a meter and a half. Majd looked up and saw that the man’s rope was straight down while his own rope was has shifted. <br>
+ So, Majd corrected her descent by going half a meter ____B____  from the mysterious man.
+ </h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q18F" id="q18F" value="trapezoid"> <span>A=parallel,B=near
+						</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q18F" id="q18F" value="true" > <span>A=parallel,B=away</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q18F" id="q18F" value="oval"> <span>A=perpendicular
+					,B=near</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box18F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box19F','q18F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_11F">
+<header>
+            <div class="title">Level 11</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+When they reach the sandy bottom, Majd can feel that the journey was almost at its end. She said goodbye to the mysterious man who went on out of the sand to his own destination. Looking back at the map, Majd saw a diagonal line to slightly to the front-right from where she stood now the an ‘x’ mark which most definitely was the location of the chest. The diagonal had a label reading 5m.
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box20F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="quiz_box19F">
+<header>
+            <div class="title">Level 11</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">11</h3>
+                        <h5 class="mt-1 ml-2">
+ That was only five meters away, Majd knew. But on the real sand, the diagonal passed through a brush of cactus trees that had plenty of pointy thorns.She knew she had to go around. Majd walked in a line straight ahead and stopped at four meters then turn 90 degrees to the right facing the spot where the ‘x’ mark was on the map. She then walk another ________ meters. <br>
+ When Majd was finally standing above the ‘x’ mark, she brought up a small shovel and started digging. It did not take long before Majd heard the shovel hit a solid object under the ground.
+ </h5>
+                    </div>
+				
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q19F" id="q19F" value="trapezoid"> <span>9</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q19F" id="q19F" value="true" > <span>3</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q19F" id="q19F" value="oval"> <span>6</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box19F')"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('level_12F','q19F')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+
+<div class="quiz_box" id="level_12F">
+<header>
+            <div class="title">Level 12</div>
+           
+           
+        </header>
+
+        <section>
+         
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                     
+                        <h5 class="mt-1 ml-2">
+Now filled with excitement, Majd cleared the sand around the chest and kneeled down only to realize that it is not an ordinary chest.<br>
+ The chest had three dials each with two digits currently set at zeros. Staring at the six zeros, Majd knew that this meant a key must be applied as numbers for the chest to open. Given that the chest was buried there by her father, Majd speculated that the key must be a number she could figure out.<br>
+ A special number? A special six-digit number? Majd’s eyes widened. It must be a short representation for her birthdate.<br>
+ Majd knew she was born on the 11th day of a month in spring, the year 2011. All she) could remember about the month is her mother saying ‘It is the only month in spring that its number of letters is divisible by 3’. 
+</h5>
+                    </div>
+                    
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('quiz_box20F','#')">Next<i class="fa fa-angle-right ml-2"></i></button>
+                
+                </div>
+                
+     </section>
+</div>
+	
+<div class="quiz_box" id="quiz_box20F">
+<header>
+            <div class="title">Level 12</div>
+            
+
+        </header>
+
+        <section>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">12.</h3>
+                        <h5 class="mt-1 ml-2">
+						Immediately, Majd began rotating the dials on the left to ____A____ as the day she was born before moving to the middle dials and entering ____B____  as the month (he/ she) was born. While setting the dials on the right to ____C____  as the year she was born, the chest gave a clinging sound. <br>
+						Majd’s heart beats pounded against her chest in anticipation.She slowly opened the lid of the chest to find a stylish pair of roller skates. Majd was delighted. As  she removed the shiny wheeled shoes from the chest, Majd found the wool necklace that she gave Sami the day he left.<br>
+						Majd fought the tears forming in her eyes to no avail.
+						</h5>
+                    </div>
+					<center><img src="images/treasure.png" width="100px" height="100px"/></center>
+                    
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q20F" id="q20F" value="error"> <span>A=11,B=05,C=05
+						</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q20F" id="q20F" value="error" > <span>A=5,B=05,C=11</span>
+                        </label>
+                    </div>
+                
+					<div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="q20F" id="q20F" value="true"> <span>A=11,B=05,C=11</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+				<button class="btn btn-primary d-flex align-items-center btn-danger" type="button" onclick="back('quiz_box20F')">
+				<i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button>
+			 <button class="btn btn-primary border-success align-items-center btn-success" type="button" onclick="show('','q20F')">Finish<i class="fa fa-angle-right ml-2"></i></button>	
+	<!--			<button class="btn btn-primary border-success align-items-center btn-success finish" onclick="show('','$')" id="finish">Finish<i class="fa fa-angle-right ml-2"></i></button></div>
+ -->
+ </section>
+</div> 
+</div>
+
+
+</div>
+  
+  <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Congrats! 🎉</div>
+        <div class="score_text">
+           
+        </div>
+		<!--<center><img src="images/money.png" width="100px"/></center>-->
+		<div class="main">
+ <form id="rating-form">
+<span class="rating-star">
+<input type="radio" name="rating" value="5"><span class="star"></span>
+ 
+    <input type="radio" name="rating" value="4"><span class="star"></span>
+ 
+    <input type="radio" name="rating" value="3"><span class="star"></span>
+ 
+    <input type="radio" name="rating" value="2"><span class="star"></span>
+ 
+    <input type="radio" name="rating" value="1"><span class="star"></span>
+</span>
+</form>
+    <p>Like the Game! Rate Us Please</p>
+ </div> 
+        <div class="buttons">
+            <button class="restart">Restart Game</button>
+            <button class="quit">Quit Game</button>
+        </div>
+    </div>
+  
+  
+  
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+	$('#rating-form').on('change','[name="rating"]',function(){
+ $('#selected-rating').text($('[name="rating"]:checked').val());
+});
+	</script>
+	   <!-- Background Music -->
+<audio src="music/bg.mp3" autoplay loop></audio>
+
+</body>
+</html>
